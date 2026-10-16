@@ -1,68 +1,79 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Page settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+    <!-- Custom CSS file -->
     <link rel="stylesheet" href="style/css.css">
 </head>
 
 <body>
 
-
-    <header class="header-home mt-12 pt-5">
-
-        <div class="container">
+    <!-- Main header section -->
+    <header>
+        <!-- Main container -->
+        <div class="container mt-12 pt-12 ">
             <div class="row">
-                <div class=" md:col-6">
-                    <img src="imgs/56f58c5bbae6320e1aa5d36445fd722b.jpg" alt="" class="w-75">
+
+                <!-- Registration image -->
+                <div class="md:col-6 class="mt-12 pt-1&#x32;*"*>
+                    <img src="img/long.jpg" alt="" class="img-fluid">
                 </div>
 
+                <!-- Registration form section -->
+                <div class="md:col-6 mt-12 pt-12">
 
+                    <!-- Page title -->
+                    <h2 class="fg-black"> Create Account</h2>
 
+                    <!-- Welcome message -->
+                    <h4 class="fg-gray my-6 intro"> Go ahead and sign up , let everyone <br> Know how awesom you are ! </h4>
 
-                <div class="md:col-6"> 
+                    <!-- Validation result message -->
+                    <h4 id="Result"></h4>
 
+                    <!-- User registration form -->
+                    <form action="SuccessPage.html" onsubmit="  return   ValidateValue()" method="post">
 
-                    <h2 class="fg-black" > Create Account </h2>
-                    <h4 class="fg-secondry  mt-4 mb-7 fg-black"> go ahead and sign Up , let every one <br>   know how awesome you are! </h4>
-                    <h4 id="result" ></h4>
-                    <form  onsubmit = "ValidateValue()"  action="Success.html" method="post" class="py-4">
+                        <!-- Username input -->
+                        <input type="text" placeholder="User-Name " id="User-Name" name="User-Name" class=" form-control my-5 p-5 bg-white fg-black">
 
-                        <input type="text" placeholder="User Name " name="user" class="fg-black form-control mb-7 bg-white p-4 rounded-5 " >
-                        
-                        <input type="text" placeholder="Email " name="Email" class="fg-black form-control mb-7 bg-white p-4 rounded-5" >
+                        <!-- Email input -->
+                        <input type="email" placeholder="email " id="email" name="email" class=" form-control bg-white text-black my-5 p-5 fg-black">
 
-                        
-                        <input type="password" placeholder="password " name="pass" class="fg-black form-control mb-7 bg-white p-4 rounded-5" >
+                        <!-- Password input -->
+                        <input type="password" placeholder=" password " id="password" name="password" class=" form-control  bg-white text-blackmy-5 p-5 fg-black">
 
+                        <!-- Confirm password input -->
+                        <input type="password" placeholder="Confirm Password " id="Confirm-password" name="User-Name" class=" form-control bg-white text-black my-5 p-5 fg-black">
 
-                        
-                        <input type="password" placeholder="Confrim " name="Confrim" class="fg-black form-control mb-7 bg-white p-4 rounded-5" >
-
-                        
-                        <input type="submit"  value="Create New Account"  class="btn-solid theme-primary  d-block  w-100  " >
+                        <!-- Submit button -->
+                        <input type="submit" value="Create New Account" class="btn-solid theme-primary form-control">
 
                     </form>
                 </div>
 
-                
             </div>
-
         </div>
     </header>
 
-
-
+    <!-- Bootstrap JavaScript -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
         crossorigin="anonymous"></script>
-    <script src="js/js.js"></script>
 
+    <!-- Custom JavaScript file -->
+    <script src="java/js.js"></script>
 </body>
 
 </html>
+```
